@@ -4,3 +4,21 @@
 @theme {
   --font-sans: "Roboto", Arial, sans-serif;
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+
+.show-scrollbar {
+  -ms-overflow-style: initial;  /* IE, Edge */
+  scrollbar-width: initial;     /* Firefox */
+}
+
+.show-scrollbar::-webkit-scrollbar {
+  display: initial;             /* Chrome, Safari */
+}

@@ -1,3 +1,6 @@
+<!-- FIX 1 -> Search bar bottom margin -->
+<!-- FIX 2 -> Add gap between voice and searchbar -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +13,8 @@
     <link rel="stylesheet" href="./output.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-<body class="font-sans">
-    <header class="flex items-center h-16  px-5 justify-between">
+<body class="font-sans h-screen max-h-screen flex flex-col overflow-hidden">
+    <header class="flex items-center h-16 px-5 justify-between">
         <div class="flex h-full items-center gap-5">
             <a href="#"><i class="ri-menu-line text-xl"></i></a>
             <img class="md:h-2/5 h-2/7 cursor-pointer" src="./assets/img/logo.png" alt="">  
@@ -34,5 +37,59 @@
             </div>
         </div>
     </header>
+    <div class="flex h-full min-h-0 gap-6">
+        <nav class="w-64 shrink-0 overflow-y-auto bg-white sidebar"></nav>
+        <div class="content flex-1 min-w-0">
+            <div class="tags flex gap-4 overflow-x-auto w-full no-scrollbar my-4"></div>
+            <div class="feed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <div class="video cursor-pointer py-3 px-2 hover:bg-gray-200 rounded-2xl">
+                    <div class="thumbnail relative mb-2">
+                        <img class="mb-2 rounded-xl block w-full" src="https://i.ytimg.com/vi/KiBgWRG_SEk/hq720.jpg" alt="">
+                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm">17:25</p>
+                    </div>
+                    <div class="vid-info flex gap-3">
+                        <img class="w-9 h-9 rounded-full" src="https://yt3.ggpht.com/Ek9RVVbKa2QCL7ayzGf9_rhCb73dvtpopaZymMZAdCq3qtuHuzucAgFwziThlUUhowgKHLyX7Q=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="text flex-1">
+                            <h4 class="font-medium">Building the most INSANE Gaming PC 2026! [ft. ASUS Matrix]</h4>
+                            <p class="text-gray-500 text-sm">GeekaWhat <i class="ri-checkbox-circle-fill"></i></p>
+                            <p class="text-gray-500 text-sm">13k views &bull; 18 hours ago</p>
+                        </div>
+                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
+                    </div>
+                </div>
+                <div class="video cursor-pointer py-3 px-1.5 hover:bg-gray-200 rounded-2xl">
+                    <div class="thumbnail relative mb-2">
+                        <img class="mb-2 rounded-xl block w-full" src="https://i.ytimg.com/vi/KiBgWRG_SEk/hq720.jpg" alt="">
+                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm">17:25</p>
+                    </div>
+                    <div class="vid-info flex gap-3">
+                        <img class="w-9 h-9 rounded-full" src="https://yt3.ggpht.com/Ek9RVVbKa2QCL7ayzGf9_rhCb73dvtpopaZymMZAdCq3qtuHuzucAgFwziThlUUhowgKHLyX7Q=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="text flex-1">
+                            <h4 class="font-medium">Building the most INSANE Gaming PC 2026! [ft. ASUS Matrix]</h4>
+                            <p class="text-gray-500 text-sm">GeekaWhat <i class="ri-checkbox-circle-fill"></i></p>
+                            <p class="text-gray-500 text-sm">13k views &bull; 18 hours ago</p>
+                        </div>
+                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
+                    </div>
+                </div>
+                <div class="video cursor-pointer py-3 px-2 hover:bg-gray-200 rounded-2xl">
+                    <div class="thumbnail relative mb-2">
+                        <img class="mb-2 rounded-xl block w-full" src="https://i.ytimg.com/vi/KiBgWRG_SEk/hq720.jpg" alt="">
+                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm">17:25</p>
+                    </div>
+                    <div class="vid-info flex gap-3">
+                        <img class="w-9 h-9 rounded-full" src="https://yt3.ggpht.com/Ek9RVVbKa2QCL7ayzGf9_rhCb73dvtpopaZymMZAdCq3qtuHuzucAgFwziThlUUhowgKHLyX7Q=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="text flex-1">
+                            <h4 class="font-medium">Building the most INSANE Gaming PC 2026! [ft. ASUS Matrix]</h4>
+                            <p class="text-gray-500 text-sm">GeekaWhat <i class="ri-checkbox-circle-fill"></i></p>
+                            <p class="text-gray-500 text-sm">13k views &bull; 18 hours ago</p>
+                        </div>
+                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./script.js"></script>
 </html> 
