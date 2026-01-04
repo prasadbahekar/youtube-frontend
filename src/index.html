@@ -38,9 +38,16 @@
             </div>
         </div>
     </header>
-    <div class="flex h-full min-h-0 gap-6">
-        <nav class="w-64 shrink-0 overflow-y-auto bg-white sidebar"></nav>
-        <div class="content flex-1 min-w-0 overflow-y-scroll pr-2">
+    <div class="flex h-full min-h-0">
+        <nav class="w-64 shrink-0 overflow-y-auto bg-white sidebar hidden xl:block mr-6">
+        </nav>
+        <nav class="w-18 shrink-0 overflow-y-auto overflow-x-hidden hidden sm:flex xl:hidden bg-white sidebar flex-col items-center pt-3 gap-2">
+            <button class="hover:bg-gray-100 cursor-pointer p-2 text-[10px]" href="#"><i class="ri-home-4-fill text-[26px]"></i> Home</button>
+            <button class="hover:bg-gray-100 cursor-pointer p-2 text-[10px]" href="#"><i class="ri-svelte-line text-[26px]"></i> Shorts</button>
+            <button class="hover:bg-gray-100 cursor-pointer p-2 text-[10px]" href="#"><i class="ri-youtube-line text-[26px]"></i> Subscriptions</button>
+            <button class="hover:bg-gray-100 flex flex-col cursor-pointer p-2 text-[10px]" href="#"><i class="ri-account-circle-line text-[26px]"></i> You</button>
+        </nav>
+        <div class="content flex-1 min-w-0 overflow-y-scroll pr-2 mx-4">
             <div class="tags flex gap-4 overflow-x-auto w-full no-scrollbar my-4"></div>
             <div class="feed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
             </div>
