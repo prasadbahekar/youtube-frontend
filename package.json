@@ -1,5 +1,5 @@
 {
-  "name": "git-test",
+  "name": "youtube-frontend",
   "version": "1.0.0",
   "description": "The purpose for this repository is to make me learn more about **git and github**. It is also to make me familiar with it. I may start creating a frontent website while learning both git and tailwind because I am new to both of them.",
   "homepage": "https://github.com/prasadbahekar/git-test#readme",
@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./docs/input.css -o ./docs/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
