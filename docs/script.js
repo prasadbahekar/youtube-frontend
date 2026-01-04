@@ -108,7 +108,7 @@ let currentTag = tags[0];
 tags.forEach((tag) => {
   const new_tag = document.createElement("button");
   new_tag.textContent = tag;
-  new_tag.className = "tag bg-gray-300 text-sm whitespace-nowrap text-black data-[active=true]:bg-black data-[active=true]:text-white font-medium cursor-pointer px-3 py-1 rounded-lg";
+  new_tag.className = "tag bg-gray-200 text-sm whitespace-nowrap text-black data-[active=true]:bg-black data-[active=true]:text-white font-medium cursor-pointer px-3 py-1 rounded-lg";
   tag_holder.appendChild(new_tag);
 
   new_tag.addEventListener(("click"), () => {
