@@ -6,12 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS</title>
+    <title>YouTube</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="icon" href="https://www.youtube.com/s/desktop/aaaab8bf/img/favicon_144x144.png" type="image/png">
 </head>
 <body class="font-sans h-screen max-h-screen flex flex-col overflow-hidden">
     <header class="flex items-center h-16 px-5 justify-between">
@@ -42,63 +43,6 @@
         <div class="content flex-1 min-w-0 overflow-y-scroll pr-2">
             <div class="tags flex gap-4 overflow-x-auto w-full no-scrollbar my-4"></div>
             <div class="feed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
-                <div class="video cursor-pointer py-3 rounded-2xl">
-                    <div class="thumbnail relative mb-2">
-                        <img class="mb-2 rounded-xl block w-full" src="https://i.ytimg.com/vi/KiBgWRG_SEk/hq720.jpg" alt="">
-                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm">17:25</p>
-                    </div>
-                    <div class="vid-info flex gap-3">
-                        <img class="w-9 h-9 rounded-full" src="https://yt3.ggpht.com/Ek9RVVbKa2QCL7ayzGf9_rhCb73dvtpopaZymMZAdCq3qtuHuzucAgFwziThlUUhowgKHLyX7Q=s68-c-k-c0x00ffffff-no-rj" alt="">
-                        <div class="text flex-1">
-                            <h4 class="font-medium">Building the most INSANE Gaming PC 2026! [ft. ASUS Matrix]</h4>
-                            <p class="text-gray-500 hover:text-gray-700 inline-block text-sm">GeekaWhat <i class="ri-checkbox-circle-fill"></i></p>
-                            <p class="text-gray-500 text-sm">13k views &bull; 18 hours ago</p>
-                        </div>
-                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
-                    </div>
-                </div>
-                <div class="video cursor-pointer py-3 hover:bg-gray-200 rounded-2xl">
-                    <div class="thumbnail relative mb-2">
-                        <img class="mb-2 rounded-xl block w-full" src="https://i.ytimg.com/vi/wbTIN42an0o/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCLMUBOPDBnUZdF80toxnDey29zaQ" alt="">
-                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm">17:25</p>
-                    </div>
-                    <div class="vid-info flex gap-3">
-                        <img class="w-9 h-9 rounded-full" src="https://yt3.ggpht.com/HOwC6zZhVGf3ratIY9C4GHcNaRH88EfLlli5fDIp7vMF_6FFOoKrPR0OYtGohwIqdEjo4wAW=s68-c-k-c0x00ffffff-no-rj" alt="">
-                        <div class="text flex-1">
-                            <h4 class="font-medium">Building the most INSANE Gaming PC 2026! [ft. ASUS Matrix]</h4>
-                            <p class="text-gray-500 text-sm">GeekaWhat <i class="ri-checkbox-circle-fill"></i></p>
-                            <p class="text-gray-500 text-sm">13k views &bull; 18 hours ago</p>
-                        </div>
-                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
-                    </div>
-                </div>
-                <div class="playlist cursor-pointer py-3  rounded-2xl">
-                    <div class="thumbnail relative mb-2">
-                        <img class="mb-2 rounded-xl block w-full border-t-3 border-white" src="https://i.ytimg.com/vi/oXgMlZyJUvU/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAQqS4UlcC5R51JW7CxCl0XPVG13w" alt="">
-                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm"><i class="ri-bar-chart-fill"></i> Mix</p>
-                        <div class="bg-orange-300 w-11/12 absolute -z-1 left-1/2 -translate-x-1/2 -top-1 rounded-lg h-10"></div>
-                    </div>
-                    <div class="vid-info flex gap-3">
-                        <div class="text flex-1">
-                            <h4 class="font-medium">Mix - Pranking people Fake Sourav Joshi!</h4>
-                            <p class="text-gray-500 text-sm">GeekaWhat</p>
-                        </div>
-                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
-                    </div>
-                </div>
-                <!-- <div class="short cursor-pointer py-3 rounded-2xl">
-                    <div class="thumbnail relative mb-2">
-                        <img class="mb-2 rounded-xl block w-full" src="https://i.ytimg.com/vi/12UgiwOo28k/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDTKe1StrHTdXhhgIbBxEbfrZHYaw" alt="">
-                        <p class="duration absolute bottom-2 right-2 text-sm font-bold text-white bg-black opacity-60 py-0.5 px-1 rounded-sm">17:25</p>
-                    </div>
-                    <div class="vid-info flex gap-3">
-                        <div class="text flex-1">
-                            <h4 class="font-medium">The real rarest biome in ...</h4>
-                            <p class="text-gray-500 text-sm">13k views</p>
-                        </div>
-                        <a href="#"><i class="ri-more-2-line text-xl font-bold"></i></a>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
